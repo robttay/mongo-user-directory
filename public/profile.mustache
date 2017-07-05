@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="/main.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <div class="profile">
+    {{#users}}
+        <div>
+        <img id="addRadius" src="{{avatar}}">
+        </div>
+        <div class="profile-top">
+        <h1>{{name}}</h1>
+        {{#address.city}}
+        {{.}},
+        {{/address.city}}
+        {{^address.city}}
+        &nbsp;
+        {{/address.city}}
+        {{address.country}}&nbsp;|&nbsp;
+        {{#job}} {{.}} {{/job}}
+            {{^job}}
+            <p class="jobless">Available for hire</p>
+            {{/job}}
+            {{#company}} {{.}} {{/company}} 
+            {{#email}} {{.}} {{/email}}&nbsp;|&nbsp; {{#phone}} {{.}} {{/phone}}
+        </div>
+        <div class="profile-bottom">
+            
+            <ul>
+            <li><h4 class="bold">Education</h4></li>
+            <li><h4 class="bold">Skills</h4></li>
+            </ul>
+            <ul id="adjust-list">
+            <li>{{#university}} {{.}} {{/university}}</li>
+            <li>{{#skills}} {{.}} {{/skills}}</li>
+            </ul>
+        </div>
+        {{/users}}
+    </div>
+</body>
+
+</html>

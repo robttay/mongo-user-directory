@@ -1,0 +1,82 @@
+body {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+a:link, a:visited {
+  text-decoration: none;
+  color: #277dc4;
+  cursor: pointer;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: baseline;
+}
+.directory {
+  flex: 20%;
+  max-width: 240px;
+  border: 2px solid lightgray;
+  margin: 5px 10px;
+  text-align: left;
+  padding: 2px 10px;
+}
+.directory-text {
+  width: 240px;
+}
+
+h3 {
+  color: #277dc4;
+}
+p {
+  color: #a60c14;
+}
+h4 {
+  color: black;
+}
+.bold {
+  font-size: 20px;
+  font-weight: 900;
+}
+.profile {
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#addRadius {
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+.profile-top {
+  max-width: 410px;
+  flex: 60%;
+  margin-left: 20px;
+}
+.profile-bottom {
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  margin: 5px, 20px;
+  text-align: right;
+  list-style-type: none;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 200px;
+}
+li {
+  width: 180px;
+  list-style-type: none;
+  margin-left: 20px;
+}
+#adjust-list {
+  position: relative;
+  top: 30px;
+  width: 120px;
+  text-align: left;
+}
